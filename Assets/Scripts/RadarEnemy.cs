@@ -8,14 +8,22 @@ public class RadarEnemy : MonoBehaviour
 
     void Update()
     {
-        // Get input from arrow keys
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        // Calculate the movement direction
-        Vector3 movement = new Vector3(horizontalInput, verticalInput, 0f);
-
-        // Move the transform by the specified speed and direction
-        transform.Translate(movement * moveSpeed);
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            transform.Translate(Vector3.down * moveSpeed);
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            transform.Translate(Vector3.up * moveSpeed);
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.Translate(Vector3.right * moveSpeed);
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.Translate(Vector3.left * moveSpeed);
+        }
     }
 }
+
