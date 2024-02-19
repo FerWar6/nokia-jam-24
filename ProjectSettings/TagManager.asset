@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - RadarEnemy
+  - Radar
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: RadarShading
+    uniqueID: 2897092005
+    locked: 0
+  - name: RadarEnemy
+    uniqueID: 921384737
+    locked: 0
+  - name: RadarBorder
+    uniqueID: 875527811
     locked: 0
