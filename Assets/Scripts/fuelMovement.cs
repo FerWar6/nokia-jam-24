@@ -16,4 +16,9 @@ public class fuelMovement : MonoBehaviour
 
         transform.Translate(movement);
     }
+
+    void drawFlued()
+    {
+        
+    }
 }
